@@ -22,7 +22,8 @@ function Album() {
         {load ? <Loading /> : photos.map(img => {
           return(
             <div className="photo-container" key={img.id}>
-              <img src={ img.src.tiny } alt="foto" />
+              <img src={ img.src.tiny } alt={`foto feita por ${img.photographer}`} />
+              <p className="photographer">{img.photographer}</p>
             </div>
           );
         }) }

@@ -24,10 +24,19 @@
 }
 
 .photo-container {
+  cursor: pointer;
   height: 100%;
   max-height: 200px;
   max-width: 200px;
   width: 100%;
+}
+
+.photo-container:hover .photographer {
+  color: black;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
 }
 
 main {
@@ -69,10 +78,12 @@ button:disabled {
 }
 
 .loading-container {
-  text-align: center;
   font-size: 40px;
 }
 
+.photographer {
+  display: none;
+}
 
 @media screen and (max-width: 1450px) {
   .photo-container {

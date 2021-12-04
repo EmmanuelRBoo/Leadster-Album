@@ -5,6 +5,17 @@ header {
   top: 20px;
 }
 
+.input-header {
+  width: 50%;
+  padding-left: 6px;
+  font-size: 18px;
+  height: 30px;
+}
+
+.input-header:focus {
+  outline: none;
+}
+
 @media screen and (max-width: 900px) {
   header {
     position: absolute;

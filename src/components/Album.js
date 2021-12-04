@@ -2,11 +2,10 @@ import React, { useContext } from 'react';
 import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
 import Context from '../context/Context';
 import '../styles/Album.css';
-import Loading from './Loading';
 
 function Album() {
 
-  const {photos, page, setPage, load } = useContext(Context);
+  const {photos, page, setPage, text } = useContext(Context);
 
   return (
     <main>
@@ -19,7 +18,7 @@ function Album() {
         <FaChevronLeft className="icons" />
       </button>
       <div className="album-container">
-        {load ? <Loading /> : photos.map(img => {
+        {photos.filter(e => e.photographer.includes(text.toLocaleLowerCase())).map(img => {
           return(
             <div className="photo-container" key={img.id}>
               <img src={ img.src.tiny } alt={`foto feita por ${img.photographer}`} />

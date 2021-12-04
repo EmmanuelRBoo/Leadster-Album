@@ -79,7 +79,8 @@ button:disabled {
 @media screen and (max-width: 900px) {
   .album-container {
     display: inline-block;
-    
+    padding: 65px 0 65px 0;
+    overflow: scroll;
   }
   .photo-container {
     height: 100%;

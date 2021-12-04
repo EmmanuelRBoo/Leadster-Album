@@ -8,6 +8,7 @@ Projeto criado por Emmanuel Boo
 Projeto criado utilizando as seguintes ferramentas:
   * `React`
     * `Context Api`
+    * `Lazy & Suspense`
 
   * `Css`
   * `Scss`

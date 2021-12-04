@@ -13,7 +13,7 @@ Projeto criado utilizando as seguintes ferramentas:
   * `Scss`
 ---
 
-Projeto responsivo, componentizado, Html sêmantico para facilitação da visualizãção do conteúdo e com paginação feita manualmente.
+Projeto responsivo, componentizado, Html sêmantico para facilitação da visualizãção do conteúdo e com paginação.
 
 [API usada](https://www.pexels.com/api/documentation/#photos) para carregar fotos dinamicamente. 
 
